@@ -1,0 +1,98 @@
+/* Import Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff3f6c, #ff6f91, #ffc1cc);
+}
+
+/* Main Container */
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 380px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Focus Effect */
+input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button */
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff3f6c, #ff6f91);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Result Text */
+#result,
+h2 {
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
